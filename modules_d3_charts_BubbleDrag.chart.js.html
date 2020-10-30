@@ -1,0 +1,308 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> modules/d3/charts/BubbleDrag.chart.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Namespaces</h3><ul><li><a href="ChartJSModule.html">ChartJSModule</a></li><li><a href="ChartJSModule.chartJSUtils.html">chartJSUtils</a></li><li><a href="D3Module.html">D3Module</a></li><li><a href="D3Module.d3GraphChartsUtils.html">d3GraphChartsUtils</a></li><li><a href="D3Module.d3Utils.html">d3Utils</a></li><li><a href="numUtils.html">numUtils</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>modules/d3/charts/BubbleDrag.chart.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const {
+    appendChart,
+    d3
+} = require('../others/d3.graphCharts.utils');
+
+/**
+ * @memberOf D3Module
+ * @function
+ * @name bubbleDragChart
+ * @desc function for create a bubble drag chart
+ * @param {HTMLBodyElement} htmlElementContainer - container html element, where the chart is inserted
+ * @param {string} idElement - chart id
+ * @param {object} data - data to be plotted within the chart, with the structure:
+ * &lt;code>[
+ *       {
+ *          id: &lt;String> "A",
+ *           value: &lt;number> 150,
+ *           group: &lt;number> 1,
+ *           properties?: &lt;object> {
+ *               opacity?: &lt;number> 0.23,
+ *               border_width?: &lt;number> 5,
+ *               background_color?: &lt;String> '#000',
+ *               border_color?: &lt;String> '#523'
+ *           },
+ *           icon?: &lt;String> '.../.../.../.png',
+ *           description?: &lt;String> 'Text'
+ *       }, ...
+ * ]&lt;/code>
+ * @param {number=} [width=500] - chart width inside the container
+ * @param {number=} [height=500] - chart height inside the container
+ * @param {number=} [relativeRadius=null] - relative size radius to the circles length
+ * @param {string=} [backgroundColor='white'] - background color for the chart
+ * @param {function=} [onClickFunctionCallback=() => {}] - function callback to onClick event,
+ * with parameter d = node of data or node selected, this node contains attributes of data[index] +
+ * attributes of html element
+ * @see &lt;img src="https://i.imgur.com/BMPwD9E.png">&lt;/img>
+ * @example D3.bubbleDragChart(
+ *     document.getElementById('charts_container'),
+ *     'bubble_drag_chart',
+ *     [
+ *       {
+ *         id: "A",
+ *         value: 150,
+ *         group: 1,
+ *         properties: {
+ *             opacity: 0.23,
+ *             border_width: 5,
+ *             background_color: '#000',
+ *             border_color: '#523'
+ *         },
+ *         icon: 'assets/img/exito.png',
+ *         description: "Exito movil"
+ *       },
+ *       {
+ *         id: "B",
+ *         value: 20,
+ *         group: 2,
+ *         icon: 'assets/img/claro.png'
+ *       },
+ *       {
+ *         id: "C",
+ *         value: 20,
+ *         group: 3
+ *       },
+ *       {
+ *         id: "D",
+ *         value: 20,
+ *         group: 1
+ *       },
+ *       {
+ *         id: "E",
+ *         value: 20,
+ *         group: 1
+ *       },
+ *               {
+ *         id: "F",
+ *         value: 20,
+ *         group: 3
+ *       },
+ *       {
+ *         id: "G",
+ *         value: 20,
+ *         group: 1
+ *       },
+ *       {
+ *         id: "H",
+ *         value: 20,
+ *         group: 4
+ *       }
+ *    ]
+ * );
+ */
+module.exports = (
+    htmlElementContainer,
+    idElement,
+    data,
+    width = 500,
+    height = 500,
+    relativeRadius = undefined,
+    backgroundColor = 'white',
+    onClickFunctionCallback = () => {}
+) => {
+
+    const svg = d3.create('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .style('background-color', backgroundColor);
+
+    const centerX = width / 50;
+    const centerY = height / 50;
+    const strength = 0.05;
+    const scale = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const dragStart = (d) => {
+        if (!d3.event.active) {
+            simulation.alphaTarget(.5).restart();
+        }
+        d.fx = d.x;
+        d.fy = d.y;
+    };
+
+    const drag = (d) => {
+        d.fx = d3.event.x;
+        d.fy = d3.event.y;
+    };
+
+    const dragEnd = (d) => {
+        if (!d3.event.active) {
+            simulation.alphaTarget(.003);
+        }
+        d.fx = null;
+        d.fy = null;
+    };
+
+    const validateProperties = (d, property, result) => {
+        if (d.properties &amp;&amp; d.properties[property]) return d.properties[property]
+        return result
+    }
+
+    const ticked = () => {
+        node
+            .attr('transform', d => `translate(${d.x},${d.y})`)
+            .select('.node')
+            .attr('r', d => d.r);
+    };
+
+    const node = svg.selectAll('.node')
+        .data(data)
+        .enter()
+        .append('g')
+        .attr('class', 'node')
+        .call(d3.drag()
+            .on('start', dragStart)
+            .on('drag', drag)
+            .on('end', dragEnd))
+        .on('click', d => onClickFunctionCallback(d));
+
+    node.append('circle')
+        .attr('r', d => {
+            d.r = relativeRadius !== undefined ? (d.value / relativeRadius) : d.value;
+            return d.r;
+        })
+        .attr('cx', width / 2)
+        .attr('cy', height / 2)
+        .style('fill', d => validateProperties(d, 'background_color', scale(d.group)))
+        .style('fill-opacity', d => validateProperties(d, 'opacity', 1))
+        .attr('stroke', d => validateProperties(d, 'border_color', scale(d.group)))
+        .style('stroke-width', d => validateProperties(d, 'border_width', 1));
+
+    node.append('title')
+        .text(d => d.description ? `id: ${d.id}\ndescription: ${d.description}` : `id: ${d.id}`);
+
+    node.filter(d => String(d.icon).includes('img/'))
+        .append('image')
+        .classed('node-icon', true)
+        .attr('clip-path', d => `url(#clip-${d.id})`)
+        .attr('xlink:href', d => d.icon)
+        .attr('x', d => (width / 2) - d.r * 0.7)
+        .attr('y', d => ((height / 2) - d.r * 0.7))
+        .attr('height', d => d.r * 2 * 0.7)
+        .attr('width', d => d.r * 2 * 0.7);
+
+    const simulation = d3.forceSimulation()
+        .force('charge', d3.forceManyBody())
+        .force('collide', d3.forceCollide(d => d.r + 1))
+        .force('x', d3.forceX(centerX).strength(strength))
+        .force('y', d3.forceY(centerY).strength(strength));
+
+    simulation.nodes(data).on('tick', ticked);
+
+    appendChart(svg, idElement, htmlElementContainer)
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>

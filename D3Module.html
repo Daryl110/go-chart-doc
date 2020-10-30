@@ -1,0 +1,2434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> D3Module</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    API Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Namespaces</h3><ul><li><a href="ChartJSModule.html">ChartJSModule</a></li><li><a href="ChartJSModule.chartJSUtils.html">chartJSUtils</a></li><li><a href="D3Module.html">D3Module</a></li><li><a href="D3Module.d3GraphChartsUtils.html">d3GraphChartsUtils</a></li><li><a href="D3Module.d3Utils.html">d3Utils</a></li><li><a href="numUtils.html">numUtils</a></li></ul></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Namespace</p>
+                    <h1>D3Module</h1>
+                </header>
+                
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>D3Module</h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description">module of d3</div>
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modules_d3_d3.module.js.html" class="button">View Source</a>
+            <span>
+                <a href="modules_d3_d3.module.js.html">modules/d3/d3.module.js</a>, <a href="modules_d3_d3.module.js.html#line1">line 1</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+        
+    
+    </div>
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Namespaces</h3>
+
+        <dl>
+            <dt><a href="D3Module.d3GraphChartsUtils.html">d3GraphChartsUtils</a></dt>
+            <dd></dd>
+        
+            <dt><a href="D3Module.d3Utils.html">d3Utils</a></dt>
+            <dd></dd>
+        </dl>
+    
+
+    
+
+    
+        <div class='vertical-section'>
+            <h1>Methods</h1>
+            <div class="members">
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".bubbleDragChart">
+        <a class="href-link" href="#.bubbleDragChart">#</a>
+        
+            
+                <span class='tag'>static</span>
+            
+        
+        <span class="code-name">
+            
+                bubbleDragChart<span class="signature">(htmlElementContainer, idElement, data, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>, relativeRadius<span class="signature-attributes">opt</span>, backgroundColor<span class="signature-attributes">opt</span>, onClickFunctionCallback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        function for create a bubble drag chart
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>htmlElementContainer</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">HTMLBodyElement</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">container html element, where the chart is inserted</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>idElement</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">chart id</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>data</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">data to be plotted within the chart, with the structure:
+<code>[
+      {
+         id: <String> "A",
+          value: <number> 150,
+          group: <number> 1,
+          properties?: <object> {
+              opacity?: <number> 0.23,
+              border_width?: <number> 5,
+              background_color?: <String> '#000',
+              border_color?: <String> '#523'
+          },
+          icon?: <String> '.../.../.../.png',
+          description?: <String> 'Text'
+      }, ...
+]</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>width</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          500
+      
+      </td>
+  
+
+  <td class="description last">chart width inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>height</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          500
+      
+      </td>
+  
+
+  <td class="description last">chart height inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>relativeRadius</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          null
+      
+      </td>
+  
+
+  <td class="description last">relative size radius to the circles length</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>backgroundColor</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'white'
+      
+      </td>
+  
+
+  <td class="description last">background color for the chart</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>onClickFunctionCallback</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">function</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          () => {}
+      
+      </td>
+  
+
+  <td class="description last">function callback to onClick event,
+with parameter d = node of data or node selected, this node contains attributes of data[index] +
+attributes of html element</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><img src="https://i.imgur.com/BMPwD9E.png"></img></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modules_d3_charts_BubbleDrag.chart.js.html" class="button">View Source</a>
+            <span>
+                <a href="modules_d3_charts_BubbleDrag.chart.js.html">modules/d3/charts/BubbleDrag.chart.js</a>, <a href="modules_d3_charts_BubbleDrag.chart.js.html#line6">line 6</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>D3.bubbleDragChart(
+    document.getElementById('charts_container'),
+    'bubble_drag_chart',
+    [
+      {
+        id: "A",
+        value: 150,
+        group: 1,
+        properties: {
+            opacity: 0.23,
+            border_width: 5,
+            background_color: '#000',
+            border_color: '#523'
+        },
+        icon: 'assets/img/exito.png',
+        description: "Exito movil"
+      },
+      {
+        id: "B",
+        value: 20,
+        group: 2,
+        icon: 'assets/img/claro.png'
+      },
+      {
+        id: "C",
+        value: 20,
+        group: 3
+      },
+      {
+        id: "D",
+        value: 20,
+        group: 1
+      },
+      {
+        id: "E",
+        value: 20,
+        group: 1
+      },
+              {
+        id: "F",
+        value: 20,
+        group: 3
+      },
+      {
+        id: "G",
+        value: 20,
+        group: 1
+      },
+      {
+        id: "H",
+        value: 20,
+        group: 4
+      }
+   ]
+);</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".collapsableTreeChart">
+        <a class="href-link" href="#.collapsableTreeChart">#</a>
+        
+            
+                <span class='tag'>static</span>
+            
+        
+        <span class="code-name">
+            
+                collapsableTreeChart<span class="signature">(htmlElementContainer, idElement, data, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>, margin<span class="signature-attributes">opt</span>, backgroundColor<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        function for create a collapsable tree chart
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>htmlElementContainer</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">HTMLBodyElement</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">container html element, where the chart is inserted</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>idElement</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">chart id</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>data</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">data to be plotted within the chart, with the structure:
+<code>{ name: string, children: array[data] }</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>width</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          1050
+      
+      </td>
+  
+
+  <td class="description last">chart width inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>height</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          300
+      
+      </td>
+  
+
+  <td class="description last">chart height inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>margin</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">Object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          { top: 10, right: 120, bottom: 10, left: 120 }
+      
+      </td>
+  
+
+  <td class="description last">view box container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>backgroundColor</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'white'
+      
+      </td>
+  
+
+  <td class="description last">background color for the chart</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><img src="https://i.imgur.com/cOzfwr9.jpg"></img></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modules_d3_charts_collapsableTree.chart.js.html" class="button">View Source</a>
+            <span>
+                <a href="modules_d3_charts_collapsableTree.chart.js.html">modules/d3/charts/collapsableTree.chart.js</a>, <a href="modules_d3_charts_collapsableTree.chart.js.html#line6">line 6</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>D3.collapsableTreeChart(
+   document.getElementById('charts'),
+   'collapsable_tree_chart',
+   {
+    name: 'root',
+    children: [
+      {
+        name: 'node_1',
+        children: [
+          {
+            name: 'node_1.1',
+            children: [
+              {
+                name: 'node_1.1.1'
+              },
+              {
+                name: 'node_1.1.2'
+              },
+              {
+                name: 'node_1.1.3'
+              }
+            ]
+          }
+        ]
+      },
+      {
+        name: 'node_2',
+        children: [
+          {
+            name: 'node_2.1',
+            children: [
+              {
+                      name: 'node_2.1.1'
+              },
+              {
+                name: 'node_2.1.2'
+              },
+              {
+                name: 'node_2.1.3',
+                children: [
+                  {
+                    name: 'node_2.1.3.1',
+                    children: [
+                      {
+                        name: 'node_2.1.3.1.1'
+                      },
+                      {
+                        name: 'node_2.1.3.1.2'
+                      },
+                      {
+                        name: 'node_2.1.3.1.3'
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            name: 'node_2.2'
+          },
+          {
+            name: 'node_2.3'
+          },
+        ]
+      }
+    ]
+  }
+);</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".directionalGraphChart">
+        <a class="href-link" href="#.directionalGraphChart">#</a>
+        
+            
+                <span class='tag'>static</span>
+            
+        
+        <span class="code-name">
+            
+                directionalGraphChart<span class="signature">(htmlElementContainer, idElement, data, showIds<span class="signature-attributes">opt</span>, spaceOfLegend<span class="signature-attributes">opt</span>, nodeFunctions<span class="signature-attributes">opt</span>, archesFunctions<span class="signature-attributes">opt</span>, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>, backgroundColor<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        function for create a graph chart
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>htmlElementContainer</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">HTMLBodyElement</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">container html element, where the chart is inserted</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>idElement</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">chart id</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>data</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">data to be plotted within the chart, with the structure:
+<code>{
+    nodes: [{ id: string, group: number }],
+    arches: [{ source: string, target: string, type: string, ... }]
+}</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>showIds</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">boolean</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          false
+      
+      </td>
+  
+
+  <td class="description last">it'll show id for each node</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>spaceOfLegend</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          []
+      
+      </td>
+  
+
+  <td class="description last">space between legends</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>nodeFunctions</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">array</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          []
+      
+      </td>
+  
+
+  <td class="description last">functions of each node within the chart, with the structure:
+<code>nodeFunctions: [{ event: string // event type, handler: function(node?) // action to take }]</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>archesFunctions</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">array</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          null
+      
+      </td>
+  
+
+  <td class="description last">functions of each arch within the chart, with the structure:
+<code>archesFunctions: [{ event: string // event type, handler: function(arch?) // action to take }]</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>width</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          500
+      
+      </td>
+  
+
+  <td class="description last">chart width inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>height</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          500
+      
+      </td>
+  
+
+  <td class="description last">chart height inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>backgroundColor</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'white'
+      
+      </td>
+  
+
+  <td class="description last">background color for the chart</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><img src="https://i.imgur.com/hZxqGSc.jpg"></img></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modules_d3_charts_directionalGraph.chart.js.html" class="button">View Source</a>
+            <span>
+                <a href="modules_d3_charts_directionalGraph.chart.js.html">modules/d3/charts/directionalGraph.chart.js</a>, <a href="modules_d3_charts_directionalGraph.chart.js.html#line12">line 12</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>D3.directionalGraphChart(
+  document.getElementById('charts'),
+  'chart',
+  {
+    nodes: [
+      { id: "Microsoft", group: 1 },
+      { id: "Amazon", group: 2 },
+      { id: "HTC", group: 1 },
+      { id: "Samsung", group: 2 },
+      { id: "Apple", group: 1 },
+      { id: "Motorola", group: 1 },
+      { id: "Nokia", group: 2 },
+      { id: "Kodak", group: 2 },
+      { id: "Barnes &amp; Noble", group: 4 },
+      { id: "Foxconn", group: 1 },
+      { id: "Oracle", group: 2 },
+      { id: "Google", group: 1 },
+      { id: "Inventec", group: 5 },
+      { id: "LG", group: 1 },
+      { id: "RIM", group: 1 },
+      { id: "Sony", group: 3 },
+      { id: "Qualcomm", group: 3 },
+      { id: "Huawei", group: 3 },
+      { id: "ZTE", group: 1 },
+      { id: "Ericsson", group: 1 }
+    ],
+    arches: [
+      {
+        source: "Microsoft",
+        target: "Amazon",
+        type: "licensing"
+      }, {
+        source: "Microsoft",
+        target: "HTC",
+        type: "licensing"
+      }, {
+        source: "Samsung",
+        target: "Apple",
+        type: "suit"
+      }, {
+        source: "Motorola",
+        target: "Apple",
+        type: "suit"
+      }, {
+        source: "Nokia",
+        target: "Apple",
+        type: "resolved"
+      }, {
+        source: "HTC",
+        target: "Apple",
+        type: "suit"
+      }, {
+        source: "Kodak",
+        target: "Apple",
+        type: "suit"
+      }, {
+        source: "Microsoft",
+        target: "Barnes &amp; Noble",
+        type: "suit"
+      }, {
+        source: "Microsoft",
+        target: "Foxconn",
+        type: "suit"
+      }, {
+        source: "Oracle",
+        target: "Google",
+        type: "suit"
+      }, {
+        source: "Apple",
+        target: "HTC",
+        type: "suit"
+      }, {
+        source: "Microsoft",
+        target: "Inventec",
+        type: "suit"
+      }, {
+        source: "Samsung",
+        target: "Kodak",
+        type: "resolved"
+      }, {
+        source: "LG",
+        target: "Kodak",
+        type: "resolved"
+      }, {
+        source: "RIM",
+        target: "Kodak",
+        type: "suit"
+      }, {
+        source: "Sony",
+        target: "LG",
+        type: "suit"
+      }, {
+        source: "Kodak",
+        target: "LG",
+        type: "resolved"
+      }, {
+        source: "Apple",
+        target: "Nokia",
+        type: "resolved"
+      }, {
+        source: "Qualcomm",
+        target: "Nokia",
+        type: "resolved"
+      }, {
+        source: "Apple",
+        target: "Motorola",
+        type: "suit"
+      }, {
+        source: "Microsoft",
+        target: "Motorola",
+        type: "suit"
+      }, {
+        source: "Motorola",
+        target: "Microsoft",
+        type: "suit"
+      }, {
+        source: "Huawei",
+        target: "ZTE",
+        type: "suit"
+      }, {
+        source: "Ericsson",
+        target: "ZTE",
+        type: "suit"
+      }, {
+        source: "Kodak",
+        target: "Samsung",
+        type: "resolved"
+      }, {
+        source: "Apple",
+        target: "Samsung",
+        type: "suit"
+      }, {
+        source: "Kodak",
+        target: "RIM",
+        type: "suit"
+      }, {
+        source: "Nokia",
+        target: "Qualcomm",
+        type: "suit"
+      }
+    ]
+  },
+  false,
+  [
+    {
+      event: 'click',
+      handler: console.log
+    }
+  ],
+  [
+    {
+      event: 'click',
+      handler: console.log
+    }
+  ]
+  );</code></pre>
+    
+
+
+</div>
+            
+                <div class="member">
+
+
+    
+    <h4 class="name" id=".graphChart">
+        <a class="href-link" href="#.graphChart">#</a>
+        
+            
+                <span class='tag'>static</span>
+            
+        
+        <span class="code-name">
+            
+                graphChart<span class="signature">(htmlElementContainer, idElement, data, nodeFunctions<span class="signature-attributes">opt</span>, archesFunctions<span class="signature-attributes">opt</span>, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>, backgroundColor<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span>
+            
+        </span>
+    </h4>
+    
+
+    
+    
+    <div class="description">
+        function for create a graph chart
+    </div>
+    
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+<div class="table-container">
+    <table class="params table">
+        <thead>
+        <tr>
+            
+            <th>Name</th>
+            
+
+            <th>Type</th>
+
+            
+            <th>Attributes</th>
+            
+
+            
+            <th>Default</th>
+            
+
+            <th class="last">Description</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>htmlElementContainer</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">HTMLBodyElement</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">container html element, where the chart is inserted</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>idElement</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">chart id</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>data</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">object</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+      </td>
+  
+
+  <td class="description last">data to be plotted within the chart, with the structure:
+<code>{
+    nodes: [{ id: string, group: number }],
+    arches: [{ source: string, target: string, value: object, ... }]
+}</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>nodeFunctions</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">array</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          []
+      
+      </td>
+  
+
+  <td class="description last">functions of each node within the chart, with the structure:
+<code>nodeFunctions: [{ event: string // event type, handler: function(node?) // action to take }]</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>archesFunctions</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">array</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          []
+      
+      </td>
+  
+
+  <td class="description last">functions of each arch within the chart, with the structure:
+<code>archesFunctions: [{ event: string // event type, handler: function(arch?) // action to take }]</code></td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>width</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          500
+      
+      </td>
+  
+
+  <td class="description last">chart width inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>height</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">number</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          500
+      
+      </td>
+  
+
+  <td class="description last">chart height inside the container</td>
+</tr>
+
+
+        
+
+            
+<tr class="deep-level-0">
+  
+      <td class="name"><code>backgroundColor</code></td>
+  
+
+  <td class="type">
+  
+      
+<span class="param-type">string</span>
+
+
+  
+  </td>
+
+  
+      <td class="attributes">
+      
+          &lt;optional><br>
+      
+
+      
+
+      
+      </td>
+  
+
+  
+      <td class="default">
+      
+          'white'
+      
+      </td>
+  
+
+  <td class="description last">background color for the chart</td>
+</tr>
+
+
+        
+        </tbody>
+    </table>
+</div>
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><img src="https://i.imgur.com/byHuczW.jpg"></img></li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+        <p class="tag-source">
+            <a href="modules_d3_charts_graph.chart.js.html" class="button">View Source</a>
+            <span>
+                <a href="modules_d3_charts_graph.chart.js.html">modules/d3/charts/graph.chart.js</a>, <a href="modules_d3_charts_graph.chart.js.html#line12">line 12</a>
+            </span>
+        </p>
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    
+        <pre class="prettyprint"><code>D3.graphChart(
+  document.getElementById('charts'),
+  'graph_chart',
+  {
+     nodes: [
+       { id: 'Armenia', group: 1 },
+       { id: 'Calarca', group: 1 },
+       { id: 'Circasia', group: 1 },
+       { id: 'Pereira', group: 2 },
+       { id: 'Cali', group: 3 },
+       { id: 'Bogota', group: 4 },
+       { id: 'Soacha', group: 4 },
+       { id: 'Medellin', group: 5 },
+       { id: 'Itagui', group: 5 },
+       { id: 'Envigado', group: 5 }
+     ],
+     arches: [
+       { source: 'Armenia', target: 'Calarca', value: 5 },
+       { source: 'Armenia', target: 'Circasia', value: 5 },
+       { source: 'Cali', target: 'Medellin', value: 5 },
+       { source: 'Medellin', target: 'Itagui', value: 5 },
+       { source: 'Armenia', target: 'Medellin', value: 5 },
+       { source: 'Cali', target: 'Bogota', value: 5 },
+       { source: 'Bogota', target: 'Soacha', value: 5 },
+       { source: 'Armenia', target: 'Bogota', value: 5 },
+       { source: 'Medellin', target: 'Envigado', value: 5 },
+       { source: 'Armenia', target: 'Pereira', value: 5 }
+     ]
+   }
+);</code></pre>
+    
+
+
+</div>
+            
+            </div>
+        </div>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by 
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+</body>
+</html>
